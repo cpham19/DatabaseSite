@@ -1,0 +1,18 @@
+
+public class StudentModel {
+	int id;
+	String ssn;
+	String name;
+	int age;
+	String gender;
+	String deg_prog;
+	
+	public StudentModel(int id, String ssn, String name, int age, String gender, String deg_prog) {
+		this.id = id;
+		this.ssn = ssn;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.deg_prog = deg_prog;
+	}
+}

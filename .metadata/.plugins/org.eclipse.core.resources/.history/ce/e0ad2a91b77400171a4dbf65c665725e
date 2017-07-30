@@ -1,0 +1,16 @@
+
+public class ProjectModel {
+	
+	int id;
+	String ssn;
+	String name;
+	
+	public ProjectModel() {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.rank = rank;
+		this.res_spec = res_spec;
+	}
+}

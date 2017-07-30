@@ -1,0 +1,18 @@
+
+public class ProjectModel {
+	
+	int id;
+	int projectNum;
+	String sponsorName;
+	String startingDate;
+	String endingDate;
+	
+	public ProjectModel(int id, int projectNum, String sponsorName, String startingDate, String endingDate) {
+		this.id = id;
+		this.projectNum = projectNum;
+		this.sponsorName = sponsorName;
+		this.startingDate = startingDate;
+		this.endingDate = endingDate;
+	}
+	
+}

@@ -1,0 +1,22 @@
+
+public class FacultyModel {
+	
+	int id;
+	String ssn;
+	String name;
+	String age;
+	String gender;
+	String rank;
+	String res_spec;
+	
+	public FacultyModel(int id, String ssn, String name, String age, String gender, String rank, String res_spec) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.rank = rank;
+		this.res_spec = res_spec;
+	}
+	
+
+}

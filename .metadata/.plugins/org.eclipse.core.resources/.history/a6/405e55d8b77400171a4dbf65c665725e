@@ -1,0 +1,12 @@
+
+public class ProjectModel {
+	
+	int id;
+	int projectNum;
+	String sponsorName;
+	
+	public ProjectModel() {
+		this.id = id;
+		this.name = name;
+	}
+}

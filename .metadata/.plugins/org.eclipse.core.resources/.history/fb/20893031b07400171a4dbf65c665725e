@@ -1,0 +1,19 @@
+
+public class FacultyModel {
+	
+	int id;
+	String ssn;
+	String name;
+	String age;
+	Stringe gender;
+	int votes;
+	
+	public FacultyModel(int id, String title, String url, int votes) {
+		this.id = id;
+		this.title = title;
+		this.url = url;
+		this.votes = votes;
+	}
+	
+
+}
