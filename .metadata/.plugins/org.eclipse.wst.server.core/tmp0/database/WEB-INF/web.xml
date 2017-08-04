@@ -102,6 +102,15 @@
     <url-pattern>/DeleteStudent</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>ViewNumberOfPeople</servlet-name>
+    <servlet-class>ViewNumberOfPeople</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewNumberOfPeople</servlet-name>
+    <url-pattern>/ViewNumberOfPeople</url-pattern>
+  </servlet-mapping>
+  
   
   <welcome-file-list>
     <welcome-file>Table</welcome-file>

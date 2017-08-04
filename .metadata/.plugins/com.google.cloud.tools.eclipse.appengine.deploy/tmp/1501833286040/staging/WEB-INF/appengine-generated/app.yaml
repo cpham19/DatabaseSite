@@ -1,0 +1,79 @@
+runtime: java7
+inbound_services:
+- warmup
+derived_file_type:
+- java_precompiled
+threadsafe: True
+auto_id_policy: default
+api_version: 'none'
+handlers:
+- url: (/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: /
+  script: unused
+  login: optional
+  secure: optional
+- url: /.*/
+  script: unused
+  login: optional
+  secure: optional
+- url: /_ah/.*
+  script: unused
+  login: optional
+  secure: optional
+- url: .*\.jsp
+  script: unused
+  login: optional
+  secure: optional
+- url: /ViewNumberOfPeople
+  script: unused
+  login: optional
+  secure: optional
+- url: /DeleteStudent
+  script: unused
+  login: optional
+  secure: optional
+- url: /AddProjectToStud
+  script: unused
+  login: optional
+  secure: optional
+- url: /ViewStudent
+  script: unused
+  login: optional
+  secure: optional
+- url: /AddStudent
+  script: unused
+  login: optional
+  secure: optional
+- url: /ViewProfessorProject
+  script: unused
+  login: optional
+  secure: optional
+- url: /AddProjectToProf
+  script: unused
+  login: optional
+  secure: optional
+- url: /DeleteProject
+  script: unused
+  login: optional
+  secure: optional
+- url: /AddProject
+  script: unused
+  login: optional
+  secure: optional
+- url: /DeleteFaculty
+  script: unused
+  login: optional
+  secure: optional
+- url: /AddFaculty
+  script: unused
+  login: optional
+  secure: optional
+- url: /Table
+  script: unused
+  login: optional
+  secure: optional

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+  <servlet>
+    <servlet-name>Table</servlet-name>
+    <servlet-class>Table</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Table</servlet-name>
+    <url-pattern>/Table</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddFaculty</servlet-name>
+    <servlet-class>AddFaculty</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddFaculty</servlet-name>
+    <url-pattern>/AddFaculty</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteFaculty</servlet-name>
+    <servlet-class>DeleteFaculty</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteFaculty</servlet-name>
+    <url-pattern>/DeleteFaculty</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddProject</servlet-name>
+    <servlet-class>AddProject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProject</servlet-name>
+    <url-pattern>/AddProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteProject</servlet-name>
+    <servlet-class>DeleteProject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProject</servlet-name>
+    <url-pattern>/DeleteProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddProjectToProf</servlet-name>
+    <servlet-class>AddProjectToProf</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProjectToProf</servlet-name>
+    <url-pattern>/AddProjectToProf</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewProfessorProject</servlet-name>
+    <servlet-class>ViewProfessorProject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewProfessorProject</servlet-name>
+    <url-pattern>/ViewProfessorProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddStudent</servlet-name>
+    <servlet-class>AddStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudent</servlet-name>
+    <url-pattern>/AddStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewStudent</servlet-name>
+    <servlet-class>ViewStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewStudent</servlet-name>
+    <url-pattern>/ViewStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddProjectToStud</servlet-name>
+    <servlet-class>AddProjectToStud</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProjectToStud</servlet-name>
+    <url-pattern>/AddProjectToStud</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteStudent</servlet-name>
+    <servlet-class>DeleteStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudent</servlet-name>
+    <url-pattern>/DeleteStudent</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ViewNumberOfPeople</servlet-name>
+    <servlet-class>ViewNumberOfPeople</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewNumberOfPeople</servlet-name>
+    <url-pattern>/ViewNumberOfPeople</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>Table</welcome-file>
+  </welcome-file-list>
+</web-app>

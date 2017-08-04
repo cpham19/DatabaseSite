@@ -52,7 +52,7 @@
 	<c:if test="${not empty projects}">
 		<c:forEach items="${projects}" var="project">
  			<div class="pane panel-default">
-				 <div class = "pane panel-heading"><h1>Project#${project.projectNum} ${project.sponsorName} | Start: ${project.startingDate}  End: ${project.endingDate} <a href="ViewStudent?proj_num=${project.projectNum}&spon_name=${project.sponsorName}" class="btn btn-primary" role="button">View Students</a><a href="DeleteProject?id=${project.projectNum}" class="btn btn-danger" role="button">Delete Project</a></h1></div>
+				 <div class = "pane panel-heading"><h1>Project#${project.projectNum} ${project.sponsorName} | Start: ${project.startingDate}  End: ${project.endingDate} <a href="ViewStudent?proj_num=${project.projectNum}&spon_name=${project.sponsorName}" class="btn btn-primary" role="button">View Students</a><a href="ViewNumberOfPeople?proj_num=${project.projectNum}" class="btn btn-success" role="button">View Number</a><a href="DeleteProject?id=${project.projectNum}" class="btn btn-danger" role="button">Delete Project</a></h1></div>
 			</div>
 		</c:forEach>
 	</c:if>

@@ -49,7 +49,7 @@ public class DeleteFaculty extends HttpServlet {
 	        
 			pstmt.executeUpdate();
 	        
-	        String sql2 = "delete from proj_work where wkr_ssn = '" + ssn + "'";
+	        String sql2 = "delete from prof_work where wkr_ssn = '" + ssn + "'";
 	        pstmt = c.prepareStatement(sql2);
 	    
 	        pstmt.executeUpdate();
