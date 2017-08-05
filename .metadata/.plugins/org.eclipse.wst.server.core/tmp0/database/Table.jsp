@@ -12,6 +12,8 @@
 	<a href="AddFaculty.jsp" class="btn btn-primary" role="button">Add Faculty Member</a><a href="AddProject.jsp" class="btn btn-primary" role="button">Add Project</a><a href="AddStudent.jsp" class="btn btn-primary" role="button">Add Student</a>
 
 	<h1>Table of Faculty Members</h1>
+	<p>% of Female Professors: ${femaleProfessors}</p>
+	<br/>
 	<c:if test="${empty faculties}">
 		<div class="jumbotron">
 			<h1>Oh no! <small>There are no faculty members to display.</small></h1>

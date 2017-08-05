@@ -32,7 +32,8 @@ public class Table extends HttpServlet
 	{
 		ArrayList<FacultyModel> faculties = new ArrayList<>();
 		ArrayList<ProjectModel> projects = new ArrayList<>();	
-		ArrayList<StudentModel> students = new ArrayList<>();	
+		ArrayList<StudentModel> students = new ArrayList<>();
+		double femaleProfessors = 0;
 		
 		Connection c = null;
         try
@@ -71,6 +72,13 @@ public class Table extends HttpServlet
             	
             	students.add(entry);
  			}
+            
+            rs = stmt.executeQuery("SELECT female_faculty();");
+            
+            
+            while (rs.next()) {
+            	femaleProfessors = rs.getDouble("female_faculty") * 100;
+ 			}
         }
          
         catch( SQLException e ) {
@@ -98,6 +106,7 @@ public class Table extends HttpServlet
         request.setAttribute("faculties", faculties);
         request.setAttribute("projects", projects);
         request.setAttribute("students", students);
+        request.setAttribute("femaleProfessors", femaleProfessors + "%");
         
         request.getRequestDispatcher("Table.jsp").forward(request,response);
 	}

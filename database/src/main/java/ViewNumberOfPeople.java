@@ -52,7 +52,6 @@ public class ViewNumberOfPeople extends HttpServlet
                  
                  while (rs.next()) {
                 	 count = rs.getInt("total_people");
-                	 System.out.println(count);
       			}
                  
             }
